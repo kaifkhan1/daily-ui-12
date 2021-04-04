@@ -144,3 +144,10 @@ footer button:hover{
 .social ul li a:hover{
     color: var(--primary-color);
 }
+
+
+@media(max-width:700px){
+    footer button{
+        transform: translate(-100px,0);
+    }
+}
