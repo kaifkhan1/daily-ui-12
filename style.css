@@ -1,0 +1,146 @@
+:root{
+    --primary-color:#bc7201;
+    --secondary-color:#536162;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.5;
+    height: 100vh;
+    width: 100vw;
+    background: url('./image/sylvie-tittel-674439-unsplash-scaled.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    /* font-weight: bold; */
+}
+
+.navbar-li{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.navbar-li h2{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.navbar-li input{
+    position: relative;
+    height: 30px;
+    margin-left: auto;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 2px 0px 10px var(--secondary-color);
+    padding: 5px;
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-li input:focus{
+   outline: none;
+}
+
+.navbar-li i{
+    position: absolute;
+    right:30px;
+    padding: 10px;
+    color: var(--secondary-color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-li i::before{
+    padding: 10px;
+    margin-bottom: 2px;
+    opacity: 0.5;
+}
+
+/* Links */
+
+.links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.links ul li{
+    list-style: none;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.links ul li a{
+    font-size: 14px;
+    color: var(--secondary-color);
+    opacity: .8;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+/* Social */
+
+.social ul{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem 0 0 1rem ;
+}
+
+.social ul li{
+    list-style: none;
+    padding: .5rem;   
+}
+
+.social ul li a{
+    color: var(--secondary-color);
+    opacity: .8;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+
+footer{
+    height: 300px;
+    display: flex;
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button{
+    transform: translate(250px,0);
+    height: 40px;
+    width: 150px;
+    background: none;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--primary-color);
+    opacity: .7;
+    font-size: 15px;
+    font-weight: 550;
+    transition: background,color 0.5s ease-in;
+    cursor: pointer;
+}
+
+footer button:hover{
+    background-color: var(--primary-color);
+    opacity: .8;
+    color:#000;
+}
+
+.links ul li a:hover{
+    color: var(--primary-color);
+}
+
+.social ul li a:hover{
+    color: var(--primary-color);
+}
